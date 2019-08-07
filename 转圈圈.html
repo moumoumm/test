@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: 100px;
+            left: 200px;
+        }
+        .box2 {
+            position: relative;
+            top: -100px;
+            left: 200px;
+            transform: rotate(45deg);
+
+        }
+        .a,.b,.c,.d{width: 30px;height: 30px;background: orangered;position: absolute;border-radius: 50%;}
+        .a{
+            top:0px;
+            left: 0;
+        }
+        .b{
+            left:170px;
+            top: 0px;
+        }
+        .c{
+            top: 170px;
+            left: 0px;
+        }
+        .d{
+            top: 170px;
+            left: 170px;
+        }
+        .box div{
+            animation: box 1.5s linear infinite;
+        }
+
+        @keyframes box {
+          0%{
+              transform: scale(0.2);
+          }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(0.2);
+            }
+        }
+        .box1 .a{animation-delay: -0.1s}
+        .box2 .a{animation-delay: -0.3s}
+        .box1 .b{animation-delay: -0.5s}
+        .box2 .b{animation-delay: -0.7s}
+        .box1 .c{animation-delay: -0.9s}
+        .box2 .c{animation-delay: -1.1s}
+        .box1 .d{animation-delay: -1.3s}
+        .box2 .d{animation-delay: -1.5s}
+    </style>
+</head>
+<body>
+<div class="box box1">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+</div>
+<div class="box box2">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+</div>
+</body>
+</html>
