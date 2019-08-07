@@ -1,0 +1,15 @@
+li {
+  line-height: 50px;
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.box{
+  width: 200px;
+  height: 200px;
+  background: url("../img/3.png") no-repeat;
+}
+
+/*# sourceMappingURL=index.css.map */
